@@ -16,9 +16,9 @@
           <mat-error *ngFor="let validation of user_validation_login_messages.password">
             <mat-error class="error-message" *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">{{validation.message}}</mat-error>
           </mat-error>
-         </mat-form-field>
+        </mat-form-field>
 
-         <button mat-raised-button color="primary" type="submit">Login</button>
+        <button mat-raised-button color="primary" type="submit">Login</button>
       </form>
       <p>Forgot Password? <a href="reset-password.html">Reset Password</a></p>
     </mat-card-content>
